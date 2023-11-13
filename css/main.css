@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Latest News */
+.news {
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+
+.news__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.news__info {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  width: 230px;
+  position: relative;
+  z-index: 2;
+  margin-top: 112px;
+}
+.news__info:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 10000px;
+  left: -5000px;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  background: #63666B;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  color: #0C233F;
+  margin-bottom: 2px;
+}
+.title.title_white {
+  color: #fff;
+}
+
+.text {
+  color: #0C233F;
+  font-size: 18px;
+  line-height: 135%;
+  font-weight: 400;
+  font-family: "Georgia";
+}
+.text.text_white {
+  color: #fff;
+}
+
+.slider {
+  position: relative;
+  z-index: 3;
+  width: 890px;
+}
+
+.slider__slides {
+  padding: 0 4px 8px 4px;
+  overflow: hidden;
+}
+
+.slider__arrow {
+  position: absolute;
+  top: 66px;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  background: #007DB8;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.slider__arrow:hover {
+  background: #005a85;
+}
+.slider__arrow.slider__arrow_prev {
+  left: -46px;
+}
+.slider__arrow.slider__arrow_next {
+  right: -46px;
+}
+.slider__arrow.swiper-button-disabled {
+  pointer-events: none;
+  opacity: 0.3;
+  cursor: default;
+}
+
+.article {
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  height: auto;
+}
+
+.article__img {
+  height: 154px;
+  position: relative;
+}
+.article__img img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.article__info {
+  padding: 18px 24px 40px 24px;
+}
+
+.article__title {
+  font-size: 21px;
+  line-height: 130%;
+  color: #1C3F94;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 8px;
+}
+.article__title a {
+  color: #1C3F94;
+  display: block;
+  text-decoration: underline;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  outline: none;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.article__title a:hover {
+  -webkit-text-decoration-color: #1C3F94;
+  text-decoration-color: #1C3F94;
+}
+
+.article__text {
+  font-family: "Minion Pro";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+/* Expanding Your Knowledge */
+.knowledge {
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
+.knowledge__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.knowledge__info {
+  width: 460px;
+}
+
+.knowledge__items {
+  width: 660px;
+  padding-left: 60px;
+  position: relative;
+}
+.knowledge__items:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 25px;
+  height: 1px;
+  top: 50%;
+  left: -25px;
+  background: #1C3F94;
+}
+
+.knowledge__item {
+  margin-bottom: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+.knowledge__item:before {
+  position: absolute;
+  display: block;
+  content: "";
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 1px;
+  height: calc(100% + 124px);
+  border-left: 1px solid #1C3F94;
+  left: -60px;
+  top: -62px;
+}
+.knowledge__item:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  top: 50%;
+  background: #1C3F94;
+  left: -60px;
+}
+.knowledge__item:nth-child(1):before {
+  width: 60px;
+  border-top: 1px solid #1C3F94;
+  top: 50%;
+  height: 50%;
+}
+.knowledge__item:nth-child(1):after {
+  display: none;
+}
+.knowledge__item:last-child {
+  margin-bottom: 0;
+}
+.knowledge__item:last-child:before {
+  width: 60px;
+  border-bottom: 1px solid #1C3F94;
+  top: auto;
+  bottom: 50%;
+  height: 50%;
+}
+.knowledge__item:last-child:after {
+  display: none;
+}
+
+.knowledge__item-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  border: 1px solid #1C3F94;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.knowledge__item-icon img {
+  max-width: 70px;
+  max-height: 70px;
+}
+
+.knowledge__item-info {
+  width: calc(100% - 90px);
+  padding-left: 15px;
+}
+
+.knowledge__item-title {
+  color: #1C3F94;
+  font-size: 21px;
+  line-height: 130%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.knowledge__item-description {
+  color: #0C233F;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  font-family: "Georgia";
+}

@@ -1,0 +1,252 @@
+@media screen and (max-width: 1340px) {
+  .container {
+    width: 1140px;
+  }
+
+  .slider {
+    width: 850px;
+  }
+
+  .knowledge__items {
+    width: 625px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 970px;
+  }
+
+  .news__content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .news__info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .slider {
+    width: 100%;
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+
+  .slider__arrow.slider__arrow_prev {
+    left: 0;
+  }
+  .slider__arrow.slider__arrow_next {
+    right: 0;
+  }
+
+  .knowledge__content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .knowledge__info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .knowledge__items {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  .knowledge__items:before {
+    height: 65px;
+    width: 1px;
+    left: 50%;
+    top: -5px;
+    background: #1C3F94;
+  }
+
+  .knowledge__item {
+    width: calc(33.3% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+    padding-top: 30px;
+    margin-bottom: 0;
+  }
+  .knowledge__item:before {
+    display: none;
+  }
+  .knowledge__item:after {
+    display: none;
+  }
+  .knowledge__item:nth-child(1):before {
+    display: block;
+    width: 50%;
+    border-left: 1px solid #1C3F94;
+    left: 50%;
+    height: 30px;
+    top: 0;
+  }
+  .knowledge__item:nth-child(2):before {
+    display: block;
+    width: calc(100% + 80px);
+    height: 1px;
+    border-top: 1px solid #1C3F94;
+    top: 0;
+    left: -40px;
+  }
+  .knowledge__item:nth-child(3):before {
+    display: block;
+    width: 50%;
+    border-right: 1px solid #1C3F94;
+    border-top: 1px solid #1C3F94;
+    border-left: none;
+    border-bottom: none;
+    left: auto;
+    right: 50%;
+    height: 30px;
+    top: 0;
+  }
+
+  .knowledge__item-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  .knowledge__item-info {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 750px;
+  }
+
+  .news {
+    padding-top: 80px;
+  }
+
+  .knowledge {
+    padding-top: 80px;
+    padding-bottom: 110px;
+  }
+
+  .article__title a {
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+
+  .news {
+    padding-top: 70px;
+  }
+
+  .knowledge {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+
+  .article__img {
+    height: 240px;
+  }
+
+  .slider__arrow {
+    top: 102px;
+  }
+
+  .knowledge__info {
+    margin-bottom: 30px;
+  }
+
+  .knowledge__items {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+  }
+  .knowledge__items:before {
+    display: none;
+  }
+
+  .knowledge__item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+  .knowledge__item:last-child {
+    margin-bottom: 0;
+  }
+  .knowledge__item:nth-child(1):before, .knowledge__item:nth-child(2):before, .knowledge__item:nth-child(3):before {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .news {
+    padding-top: 60px;
+  }
+
+  .knowledge {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+
+  .slider {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .article {
+    width: 274px;
+  }
+
+  .slider__arrow {
+    display: none;
+  }
+
+  .slider__slides {
+    overflow: visible;
+  }
+
+  .article__img {
+    height: 154px;
+  }
+
+  .news__info {
+    margin-bottom: 20px;
+  }
+
+  .knowledge__info {
+    margin-bottom: 20px;
+  }
+
+  .knowledge__item {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
